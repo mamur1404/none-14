@@ -1,0 +1,257 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1320px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+.header {
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.header__nav {
+    padding: 20px 0;
+    position: relative;
+    z-index: 999;
+}
+
+.header__nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+.header__list {
+    display: flex;
+}
+
+.header__logo {
+    color: #fff;
+}
+
+.header__link {
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-left: 30px;
+    color: #fff;
+}
+
+header img {
+    position: absolute;
+}
+
+.fantasy {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 0;
+}
+
+.cloud1 {
+    top: 15%;
+    left: 5%;
+    mix-blend-mode: overlay;
+}
+
+.cloud2 {
+    top: 15%;
+    left: 70%;
+    mix-blend-mode: overlay;
+}
+
+.cloud3 {
+    top: 15%;
+    left: 45%;
+    mix-blend-mode: overlay;
+}
+
+.boat {
+        top: 80%;
+    left: 65%;
+}
+
+.header__content {
+    position: relative;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.header__title {
+    font-size: 80px;
+    text-transform: capitalize;
+    text-shadow: 0 0 5px #fff, 0 0 5px #000;
+    color: #fff;
+    text-align: center;
+}
+
+body {
+    height: 1500px;
+}
+
+/* parallax start */
+
+.parallax {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.parallax__box {
+    position: relative;
+    flex-grow: 1;
+}
+
+.parallax__title {
+    text-align: center;
+    font-size: 60px;
+}
+
+.parallax__box img {
+    position: absolute;
+}
+
+.parallax__banner {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.layer1 {
+    top: 15%;
+    left: 15%;
+}
+
+.layer2 {
+    top: 15%;
+    left: 80%;
+}
+
+/* parallax end */
+
+/* timer start */
+
+.timer {
+    padding: 50px 0;
+    background: rgba(0, 0, 0, 0.295);
+}
+
+.timer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.timer__item {
+    width: 250px;
+    height: 250px;
+    background: rgb(16, 107, 119);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    border-radius: 30px 0 30px 0;
+}
+
+.timer__num {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.timer__btn {
+    padding: 15px 50px;
+    background: #fff;
+    color: #444;
+    font-size: 18px;
+    margin-top: 20px;
+    position: relative;
+    transition: .4s;
+    border: 1px solid #000;
+    border-radius: 4px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.timer__btn:hover {
+    color: #fff;
+}
+
+.timer__btn::before {
+    content: '';
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    background: dodgerblue;
+    border-radius: 50%;
+    transition: .4s;
+    z-index: -1;
+}
+
+.timer__btn:hover::before {
+    width: 330px;
+    height: 330px;
+}
+
+/* timer end */
+
+/* cards start */
+
+.cards {
+    padding: 50px 0;
+}
+
+.cards .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    perspective: 1000px;
+}
+
+.card__item {
+    width: 250px;
+    height: 250px;
+    background: dodgerblue;
+    transition: .2s;
+    border-radius: 15px;
+}
+
+
+
+/* cards end */
